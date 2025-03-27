@@ -1,3 +1,3 @@
 export const environment = {
-  apiUrl: 'http://www.gmlpru.somee.com/api' //
+  apiUrl: 'https://www.gmlpru.somee.com/api' //
 };
