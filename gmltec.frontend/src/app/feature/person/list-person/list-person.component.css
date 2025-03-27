@@ -57,3 +57,23 @@ button[mat-raised-button]:hover {
 .custom-table {
   width: 100%;
 }
+
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .mat-header-cell, .mat-cell {
+    padding: 8px;
+  }
+}
+

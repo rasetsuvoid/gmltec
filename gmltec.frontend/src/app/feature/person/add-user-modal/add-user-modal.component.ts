@@ -14,13 +14,15 @@ import {MatOption, MatSelect} from '@angular/material/select';
 import {DocumentTypeService} from '../../../core/services/document-type.service';
 import {DocumentTypeDto} from '../../../core/models/document-type-dto';
 import {
-  MatDatepicker,
-  MatDatepickerInput,
   MatDatepickerModule,
-  MatDatepickerToggle
 } from '@angular/material/datepicker';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {
+
+  MatSlideToggle,
+  MatSlideToggleModule
+} from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-add-user-modal',
@@ -37,7 +39,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSelect,
     NgForOf,
     MatOption,
-    MatFormFieldModule, MatInputModule, MatDatepickerModule
+    MatFormFieldModule, MatInputModule, MatDatepickerModule, MatSlideToggleModule,
+    MatSlideToggle
   ],
   providers: [provideNativeDateAdapter()],
   templateUrl: './add-user-modal.component.html',
