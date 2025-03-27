@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Filtrar Usuarios</h2>
+
+<div mat-dialog-content >
+  <form [formGroup]="filterForm" class="mt-2">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Apellido</mat-label>
+      <input matInput type="text" formControlName="lastName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Número de Documento</mat-label>
+      <input matInput type="text" formControlName="documentNumber" />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="clearFilter()">Limpiar</button>
+  <button mat-button (click)="close()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="applyFilter()">Aplicar</button>
+</div>
